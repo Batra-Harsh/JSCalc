@@ -1,0 +1,57 @@
+body
+{
+    font-size: 5rem;
+}
+
+#calBody
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+#screen, #keypad
+{
+    text-align: center;
+    width: 100%;
+    padding: 20px 35px;
+    margin: 20px 0;
+    border: 2px solid grey;
+}
+
+#keypad
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.button
+{
+    width: 22%; 
+    border: 1px solid grey;
+    padding: 0 1%;
+    margin: 1% 0;
+    text-align: center;
+}
+
+.button:nth-last-child(3)
+{
+    width: 44%;
+    padding: 0 2% 0 3%;
+}
+
+.redColor
+{
+    background-color: rgb(165, 43, 43);
+    color: white;
+}
+
+#screen
+{
+    overflow: scroll;
+    height: 120px;
+}
